@@ -7972,6 +7972,8 @@ Sigma_Exit:
             cmdqueue_pop_front(); //trick because we want skip this command (M601) after restore
             lcd_pause_print();
         }
+
+        Sound_MakeSound(e_SOUND_TYPE_StandardPrompt);
     }
     break;
 
